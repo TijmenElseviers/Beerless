@@ -9,6 +9,9 @@
   "installed_plugins": {
     "cordova-plugin-whitelist": {
       "PACKAGE_NAME": "be.beerless.app"
+    },
+    "cordova-plugin-qrscanner": {
+      "PACKAGE_NAME": "be.beerless.app"
     }
   },
   "dependent_plugins": {}

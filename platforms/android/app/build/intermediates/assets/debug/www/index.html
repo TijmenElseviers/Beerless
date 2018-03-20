@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/icon?family=Material+Icons"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css"/>
+    <title>Plug-ins</title>
+    <style>
+        .spa { display: none; }
+        #tabHome { display: block; }
+    </style>
+</head>
+<body>
+<!-- Fixed navbar -->
+<div class="navbar-fixed">
+    <nav class="teal ">
+        <div class="nav-wrapper container"><a href="#!" class="brand-logo center">Beerless</a>
+            <a href="#!" data-activates="nav-mobile" class="button-collapse show-on-large"><i class="material-icons">menu</i></a>
+        </div>
+    </nav>
+</div>
+<!-- Fixed sideNav -->
+<ul id="nav-mobile" class="side-nav">
+    <li><a href="#!" data-show="tabHome"><i class="material-icons">home</i>Home</a></li>
+    <li>
+        <div class="divider"></div>
+    </li>
+    <li><a href="#!" data-show="tabMyBox"><i class="material-icons">history</i>My boxes</a></li>
+    <li>
+        <div class="divider"></div>
+    </li>
+    <li><a href="#!" data-show="tabRating"><i class="material-icons">star</i>Ratings</a></li>
+</ul>
+<!-- Grid -->
+<div class="container">
+    <div class="row spa" id="tabHome">
+        <div class="col s12">
+            <h4><i class="material-icons">home</i>Home</h4>
+            <div class="fixed-action-btn">
+                <a class="btn-floating btn-large waves-effect waves-light teal" id="scanCode">
+                    <i class="material-icons">camera_alt</i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="row spa" id="tabMyBox">
+        <div class="col s12">
+            <h4><i class="material-icons">history</i>My boxes</h4>
+        </div>
+    </div>
+
+    <div class="row spa" id="tabRating">
+        <div class="col s12">
+            <h4><i class="material-icons">star</i> Ratings</h4>
+
+        </div>
+    </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+<script src="cordova.js"></script>
+<script defer src="js/app.js"></script>
+<script defer src="js/Scanner.js"></script>
+</body>
+</html>
